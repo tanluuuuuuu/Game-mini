@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Images\Fruit\**" />
+    <EmbeddedResource Remove="Images\Fruit\**" />
+    <None Remove="Images\Fruit\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Lesson.cs~RF3b1c62.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Topic\Animal.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Animal.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Topic\Fruit.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Fruit.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Topic\Sport.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Sport.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Topic\Vehicle.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Vehicle.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Topic\Animal.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Animal.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Topic\Fruit.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Fruit.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Topic\Sport.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sport.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Topic\Vehicle.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Vehicle.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
